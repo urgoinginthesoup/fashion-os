@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>˙⋆✮FASHION PORTFOLIO˙⋆✮</title>
+    <style>
+        
+        body {
+            cursor: url('images/Hatsune-Miku-Normal-Select.png'), auto !important;
+        }
+
+        /* 2. Swaps to custom hand/finger icon when hovering over interactive elements */
+        a, button, .y2k-btn, .window-controls span {
+            cursor: url('images/Hatsune-Miku-Link-Select.png'), pointer !important;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'times new roman', serif;
+        }
+
+        body {
+            background-color: #651614;
+            color: #f4b9b8;
+            background-image:
+                linear-gradient(rgba(169, 28, 97, 1) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(169, 28, 97, 1) 1px, transparent 1px);
+            background-size: 20px 20px;
+            overflow-x: hidden;
+            padding: 20px;
+        }
+
+        body::before {
+            content: " ";
+            display: block;
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: linear-gradient(rgba(2, 1, 1, 1.0) 50%, rgba(61, 11, 13, 1) 50%), linear-gradient(90deg, rgba(2, 1, 1, 1.0), rgba(61, 11, 13, 1), rgba(83, 8, 14, 1));
+            z-index: -2; 
+            background-size: 100% 4px, 6px 100%;
+            pointer-events: none;
+        }
+
+        .desktop-environment {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 20px;
+        }
+        header {
+            grid-column: span 12;
+            border: 2px solid #f4b9b8;
+            background: #930510;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 4px 4px 0px #240a0a;
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 0 0 8px #3b0016;
+        }
+
+        .ticker-wrap {
+            overflow: hidden;
+            width: 50%;
+            background: #86776b;
+            border: 1px inset #f4b9b8;
+            padding: 3px;
+        }
+        
+        .ticker {
+            display: inline-block;
+            white-space: nowrap;
+            animation: marquee 15s linear infinite;
+        }
+
+        @keyframes marquee {
+            0% { transform: translate3d(100%, 0, 0); }
+            100% { transform: translate3d(-100%, 0, 0); }
+        }
+
+        .window {
+            border: 2px solid #f4b9b8;
+            background: #930510;
+            box-shadow: 5px 5px 0px #240a0a;
+            margin-bottom: 10px;
+        }
+
+        .window-header {
+            background: linear-gradient(90deg, #930510, #651614);
+            color: #240a0a;
+            padding: 4px 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        .window-controls span {
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            border: 1px solid #f4b9b8;
+            text-align: center;
+            line-height: 10px;
+            cursor: pointer;
+            margin-right: 2px;
+            background: #651614;
+            font-size: 10px;
+        }
+
+        .window-content {
+            padding: 15px;
+        }
+
+        .bio-win {
+            grid-column: span 4;
+        }
+
+        @media (max-width: 768px) {
+            .bio-win, .gallery-win, .links-win {
+                grid-column: span 12 !important;
+            }
+        }
+
+        .glitch-portrait {
+            width: 100%;
+            height: 200px;
+            background: #db8291;
+            border: 2px dashed #f4b9b8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+        .gallery-win {
+            grid-column: span 8;
+        }
+
+        .lookbook-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .look-card {
+            border: 1px solid #f4d6dc;
+            background: #720002;
+            padding: 8px;
+            position: relative;
+        }
+
+        .look-img-placeholder {
+            width: 100%;
+            height: 250px;
+            background: #260005;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #6c4241;
+            color: #600907;
+            font-size: 0.8rem;
+        }
+
+        .look-meta {
+            margin-top: 8px;
+            font-size: 0.8rem;
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px dashed #fd6e6e;
+            padding-top: 5px;
+        }
+
+        .links-win {
+            grid-column: span 12;
+            text-align: center;
+        }
+
+        .y2k-btn {
+            background: #930510;
+            color: #d6aaa9;
+            border: 2px solid #f4b9b8;
+            padding: 8px 20px;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 3px 3px 0px #240a0a;
+            text-transform: uppercase;
+            display: inline-block;
+            margin: 5px 10px;
+            text-decoration: none;
+        }
+
+        .y2k-btn:hover {
+            background: #651614;
+            color: #f4b9b8;
+            border: 2px solid #f5e9d0;
+            box-shadow: 3px 3px 0px #da6c81;
+        }
+
+        .blink {
+            animation: blinker 1s linear infinite;
+        }
+
+        @keyframes blinker {
+            50% { opacity: 0; }
+        }
+        .status-bar-fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #86776b;
+    border-top: 2px solid #f4b9b8;
+    color: #240a0a;
+    font-size: 0.75rem;
+    padding: 3px 10px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+    </style>
+</head>
+<body>
+    <img src="images/cat-scuba.gif" style="position: fixed; top: 15%; left: 3%; width: 100px; z-index: -1; opacity: 0.5; pointer-events:none;">
+    <img src="images/yellow-man-dancing.gif" style="position: fixed; bottom: 25%; right: 3%; width: 90px; z-index: -1; opacity: 0.5; pointer-events:none;">
+    <img src="images/yellow-man-dancing.gif" style="position: fixed; bottom: 60%; left: 3%; width: 190px; z-index: -1; opacity: 0.5; pointer-events:none;">
+    <img src="images/nyan-cat.gif" style="position: fixed; top: 70%; left: 3%; width: 95px; z-index: -1; opacity: 1; pointer-events:none;">
+    <img src="images/carameldansen.gif" style="position: fixed; top: 25%; right: 3%; width: 120px; z-index: -1; opacity: 1; pointer-events:none;">
+    <img src="images/bonnie-blue.png" style="position: fixed; top: 5%; right: 45%; width: 80px; z-index: -1; opacity: 0.6; pointer-events: none;">
+    <img src="images/duolingo.png" style="position: fixed; top: 10%; right: 3%; width: 80px; z-index: -1; opacity: 0.6; pointer-events: none;">
+    <img src="images/glitter-stars.gif" style="position: fixed; bottom: 5%; right: 45%; width: 80px; z-index: 9999; opacity: 0.6; pointer-events: none;">
+    <img src="images/glitter-heart.gif" style="position: fixed; top: 45%; left: 2%; width: 70px; z-index: -1; opacity: 0.45; pointer-events: none;">
+    <img src="images/star-spinning.gif" style="position: fixed; top: 55%; right: 5%; width: 65px; z-index: -1; opacity: 0.7; pointer-events: none;">
+    <img src="images/butterflies.gif" style="position: fixed; bottom: 8%; left: 25%; width: 300px; z-index: 9999; opacity: 0.5; pointer-events: none;">
+    <img src="images/bunny.gif" style="position: fixed; top: 35%; right: 28%; width: 110px; z-index: 9999; opacity: 0.35; pointer-events: none;">
+    <img src="images/bat.gif" style="position: fixed; bottom: 45%; right: 15%; width: 100px; z-index: 9999; opacity: 0.7; pointer-events: none;">
+    <img src="images/my-melody.gif" style="position: fixed; top: 85%; left: 4%; width: 85px; z-index: -1; opacity: 0.6; pointer-events: none;">
+    <img src="images/chibi.jpg" style="position: fixed; bottom: 18%; right: 40%; width: 75px; z-index: 9999; opacity: 0.5; pointer-events: none;">
+
+    <div class="desktop-environment">
+
+        <header>
+            <div class="logo">˙⋆✮FASHION PORTFOLIO˙⋆✮</div>
+            <div class="ticker-wrap">
+                <div class="ticker">Welcome to my fashion portfolio! ᛝ Check out my latest looks and designs! ᛝ Contact me for collaborations and inquiries!</div>
+            </div>
+            <div>V.2005</div>
+        </header>
+        
+        <div class="window bio-win">
+            <div class="window-header">
+                <span>INFO˚.⋆꒰১ ໒꒱⋆.˚</span>
+                <div class="window-controls">
+                    <span>_</span><span>[]</span><span>X</span>
+                </div>
+            </div>
+            <div style="margin-top: 15px; background:#e91e63; border: 1px inset #ff3333; padding: 5px; text-align: center;">
+                <span style="font-size: 0.75rem; display: block; margin-bottom: 2px; color:#600907;">YOU ARE VISITOR NO.</span>
+                <span style="font-size: 1.2rem; font-weight: bold; letter-spacing: 3px; background:#6c4241; padding: 0 5px;">0048291</span>
+            </div>
+                
+            <div class="window-content">
+                <div class="glitch-portrait">
+                    <img src="images/my-gacha.png" alt="me but in gacha life" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <h2 style="font-size: 1.2rem; margin-bottom: 10px;">☆DESIGNATION: STYLIST☆</h2>
+                <p style="font-size: 0.85rem; line-height: 1.4; color: #ffff;">
+                    Hi! I'm Arlan Aleksiejiene and I like to style people. I specialise mostly in J-fashion and hyperfeminine styles₍^. .^₎Ⳋ
+                </p>
+                
+<div style="color: #ffff; text-align: center; font-size: 0.8rem; margin: 20px 0;">
+    •☽────✧˖°˖☆˖°˖✧────☾••☽────✧˖°˖☆˖°˖✧────☾•
+</div>
+                <div style="margin-top: 15px; font-size: 0.8rem; padding-top: 10px;">
+                    <strong>⋆⭒˚.⋆KEY SKILLS♡⸝⸝</strong><br>
+                    ╰┈➤Fashion Styling<br>
+                    ╰┈➤Trend Analysis<br>
+                    ╰┈➤Wardrobe Consultation<br>
+                    ╰┈➤Personal Shopping Assistant<br>
+                </div>
+            </div>
+        </div>
+
+        <div class="window gallery-win">
+            <div class="window-header">
+                <span>✶⋆.˚*ੈ✩‧₊˚༺☆༻*ੈ✩‧₊˚LOOKBOOK✶⋆.˚*ੈ✩‧₊˚༺☆༻*ੈ✩‧₊˚</span>
+                <div class="window-controls">
+                    <span>_</span><span>[]</span><span>X</span>
+                </div>
+            </div>
+            <div class="window-content">
+                <div class="lookbook-grid">
+
+                    <div class="look-card">
+                        <div class="look-img-placeholder">
+                            <span>[Look 1 Image]</span>
+                            <span style="font-size: 0.6rem; margin-top: 5px;">Ი⑅𐑼Hyperfeminine dollette𓏵‧₊˚ ┊</span>
+                        </div>
+                        <div class="look-meta">
+                            <span>SCENARIO 01</span>
+                            <span class="blink">⬤ONLINE</span>
+                        </div>
+                    </div>
+
+                    <div class="look-card">
+                        <div class="look-img-placeholder">
+                            <span>[Look 2 Image]</span>
+                            <span style="font-size: 0.6rem; margin-top: 5px;">࿐ ࿔*:･ﾟCosplay࿐ ࿔*:･ﾟ</span>
+                        </div>
+                        <div class="look-meta">
+                            <span>SCENARIO 02</span>
+                            <span class="blink">◎ARCHIVE</span>
+                        </div>
+                    </div>
+                    
+                    <div class="look-card">
+                        <div class="look-img-placeholder">
+                            <span>[Look 3 Image]</span>
+                            <span style="font-size: 0.6rem; margin-top: 5px;">➤Simple and dark⌬</span>
+                        </div>
+                        <div class="look-meta">
+                            <span>SCENARIO 03</span>
+                            <span class="blink">⬤ONLINE</span>
+                        </div>
+                    </div>
+
+                    <div class="look-card">
+                        <div class="look-img-placeholder">
+                            <span>[Look 4 Image]</span>
+                            <span style="font-size: 0.6rem; margin-top: 5px;">(˶°ㅁ°)!!Cosplay x Everyday♡ྀི</span>
+                        </div>
+                        <div class="look-meta">
+                            <span>SCENARIO 04</span>
+                            <span class="blink">◎ARCHIVE</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="window audio-player-win" style="grid-column: span 12; margin-top: 10px;">
+            <div class="window-header">
+                <span>‧₊ ♪˚⊹AUDIO_PLAYER.exe♬⋆.˚</span>
+                <div class="window-controls">
+                    <span>_</span><span>[]</span><span>X</span>
+                </div>
+            </div>
+            <div class="window-content" style="display: flex; align-items: center; justify-content: space-between; background: #ff5f9e;">
+                <div style="font-size: 0.8rem; color:#2c1418; letter-spacing: 1px;">➢NOW PLAYING: ARLANS_MIXTAPE.MP3 [02:45]</div>
+                <div style="display: flex; gap: 8px;">
+                    <button style="background:#bea6a6; border: 1px solid #930510; color: #3b0016; padding: 2px 8px; font-size: 0.7rem; cursor: crosshair;">[ REWIND ]</button>
+                    <button style="background: #86776b; border: 1px solid #5f1412; color: #2b0302; padding: 2px 8px; font-size: 0.7rem; cursor: crosshair; font-weight: bold;">[ PLAY ]</button>
+                    <button style="background:#580707; border: 1px solid #ff5f9e; color:brown; padding: 2px 8px; font-size: 0.7rem; cursor: crosshair;">[ PAUSE ]</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="window links-win">
+            <div class="window-header">
+                <span>✉˚.⋆꒰ CONTACT_ME.exe ꒱⋆.˚</span>
+                <div class="window-controls">
+                    <span>_</span><span>[]</span><span>X</span>
+                </div>
+            </div>
+            <div class="window-content" style="padding: 20px;">
+                <h3 style="font-size: 1.1rem; margin-bottom: 15px; letter-spacing: 1px;">˚*ੈ✩ GET IN TOUCH FOR COLLABORATIONS ✩ੈ*˚</h3>
+                               
+<button class="y2k-btn" onclick="copyEmail()">✉ EMAIL ME</button>
+
+<script>
+    function copyEmail() {
+        
+        const emailAddress = "schadenfruede.en@gmail.com"; 
+        
+        
+        navigator.clipboard.writeText(emailAddress);
+        
+        
+        alert("[ SYSTEM_ALERT ]: Email address copied to clipboard! ૮ ˶ᵔ ᵕ ᵔ ˶ ა");
+    }
+</script>
+
+                <a href="https://instagram.com/arlans_fashion" target="_blank" class="y2k-btn">★ INSTAGRAM</a>    
+                
+                <p style="font-size: 0.8rem; margin-top: 15px; color: #ff5f9e;" class="blink">
+                    Available for styling assignments & personal shopping!
+                </p>
+    </div>
+</div>
+
+            </div>
+        </div>
+    </div>
+    <div class="status-bar-fixed">
+    <div>Zone: Internet | Secure Connection Active</div>
+    <div>System Status: HYPERFEMININE_DRIVE [OK]</div>
+</div>
+<div class="status-bar-fixed">
+    <div>Zone: Internet | Secure Connection Active</div>
+    <div>System Status: HYPERFEMININE_DRIVE [OK]</div>
+    <div id="live-clock" style="font-family: monospace;">[ 00:00:00 AM ]</div>
+</div>
+
+
+<div style="width: 100%; background: #86776b; border: 2px inset #f4b9b8; margin-top: 25px; padding: 8px; text-align: center; box-shadow: 4px 4px 0px #240a0a;">
+    <div style="font-size: 0.75rem; color: #240a0a; margin-bottom: 5px; font-weight: bold; letter-spacing: 1px;">
+        ✦ NAVIGATE PORTFOLIO NETWORK ✦
+    </div>
+    <div style="display: flex; justify-content: center; gap: 20px; font-size: 0.85rem; font-weight: bold;">
+        
+        <a href="#" style="color: #651614; text-decoration: none; padding: 2px 8px; border: 1px solid transparent;">[ ◀ PREV ]</a>
+        <a href="#" style="color: #651614; text-decoration: none; padding: 2px 8px; border: 1px solid transparent;">[ HUB ]</a>
+        
+        <a href="project-1.html" class="y2k-btn" style="margin: 0; padding: 2px 10px; font-size: 0.8rem;">[ NEXT ▶ ]</a>
+    </div>
+</div>
+    
+    <script>
+        function updateClock() {
+            const now = new Date();
+            
+            let hours = now.getHours();
+            let minutes = now.getMinutes();
+            let seconds = now.getSeconds();
+            
+            const ampm = hours >= 12 ? 'PM' : 'AM';
+            
+            hours = hours % 12;
+            hours = hours ? hours : 12; // Formats hour '0' to look like '12'
+            
+            hours = hours < 10 ? '0' + hours : hours;
+            minutes = minutes < 10 ? '0' + minutes : minutes;
+            seconds = seconds < 10 ? '0' + seconds : seconds;
+            
+            const timeString = "[ " + hours + ":" + minutes + ":" + seconds + " " + ampm + " ]";
+            
+            document.getElementById('live-clock').textContent = timeString;
+        }
+
+        updateClock();
+        setInterval(updateClock, 1000);
+    </script>
+
+</body>
+</html>
