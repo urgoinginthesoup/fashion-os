@@ -7,24 +7,17 @@ Welcome to the official repository framework for my digital workspace! This plat
 * **Live Features:** There is a real-time clock that automatically matches your timezone.
 * **Custom Cursors:** Your normal mouse pointer turns into custom pixel graphics when you move around.
 
-
-───── ⋆⋅☆⋅⋆ ─────
-
 ## 📁 FILE INFO
 * `index.html` — Main homepage with tastes of my styled looks and very basic info on myself.
 * `project-1.html` — Extended registry containing DNI (Do Not Interact) info, NTK (Need to Know) info, and a lengthy about me description.
 * `images/` — Asset directory for any images or gifs on my homepage (index.html).
 * `overlays/` — Same as (images/) instead it's for the ABOUT ME page (project-1.html).
 
-•☽────✧˖°˖☆˖°˖✧────☾•
-
 ## 🎀 PROGRAMS USED
 This platform runs via:
 * **HTML5** — Interface core skeletons and typographic strings.
 * **CSS3** — Custom grid layouts, keyframe blink animations, and CRT scanline filters.
-* **JavaScript** — Timezone parameter controllers and being able to copy my e-mail address to use in your preferred e-mail app/website.
-
-────୨ৎ────
+* **JavaScript** — Time zone parameter controllers, blocking any right clicking and being able to copy my e-mail address to use in your preferred e-mail app/website.
 
 ## 🌸 ALPHA TESTERS
 Thank you to my alpha testers who are testing my website <33
@@ -33,7 +26,7 @@ Thank you to my alpha testers who are testing my website <33
 * ⟡ **Nomad**
 * ★ **Tester 3**
 
-‿̩͙⊱༒︎༻♱༺༒︎⊰‿̩͙
+
 
 ### 🔒 COPYRIGHT & LICENSE
 © 2026 Arlan Aleksiejiene. All rights reserved. 
