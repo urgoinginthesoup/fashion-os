@@ -32,6 +32,6 @@ Thank you to my alpha testers who are testing my website <33
 
 ### 🔒 COPYRIGHT & LICENSE
 © 2026 Arlan Aleksiejiene. All rights reserved. 
-Unauthorised duplication or redistribution of these layouts, styling coordinates, and text assets is strictly prohibited (although good luck doing that :p).
+Unauthorised duplication or redistribution of these layouts, styling coordinates, and text assets is strictly prohibited.
 
 *Designed, coded, and engineered inside Visual Studio Code.*
