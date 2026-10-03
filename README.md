@@ -2,12 +2,6 @@
 
 Welcome to the official repository framework for my digital workspace! This platform is an interactive, multi-layered vintage desktop environment built to showcase custom style lookbooks, editorial coordinates, and alternative J-fashion subculture project sheets.
 
-## ⟡ LIVE ACCESS STATION
-✨ **[CLICK HERE TO VIEW MY WORKSPACE LIVE!]([https://github.io](https://urgoinginthesoup.github.io/fashion-os/)])** ✨
-*(If the link throws an SSL error, please wait a minute for GitHub's servers to index our secure handshake link!)*
-
-· · ────── ꒰ঌ·✦·໒꒱ ────── · ·
-
 ## 🌀 AESTHETICS
 * **Old-School Windows Revival:** The website looks like a classic computer screen where different windows sit side-by-side.
 * **Live Features:** There is a real-time clock that automatically matches your timezone.
