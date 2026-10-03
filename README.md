@@ -2,6 +2,8 @@
 
 Welcome to the official repository framework for my digital workspace! This platform is an interactive, multi-layered vintage desktop environment built to showcase custom style lookbooks, editorial coordinates, and alternative J-fashion subculture project sheets.
 
+[CLICK HERE TO VIEW MY WORKSPACE LIVE!](https://urgoinginthesoup.github.io/fashion-os/)
+
 ## 🌀 AESTHETICS
 * **Old-School Windows Revival:** The website looks like a classic computer screen where different windows sit side-by-side.
 * **Live Features:** There is a real-time clock that automatically matches your timezone.
@@ -22,14 +24,14 @@ This platform runs via:
 ## 🌸 ALPHA TESTERS
 Thank you to my alpha testers who are testing my website <33
 
-* 🎀 **Valk!**
+* 🎀**Valk!**
 * ⟡ **Nomad**
-* ★ **Tester 3**
+* ★**Tester 3**
 
 
 
 ### 🔒 COPYRIGHT & LICENSE
 © 2026 Arlan Aleksiejiene. All rights reserved. 
-Unauthorised duplication or redistribution of these layouts, styling coordinates, and text assets is strictly prohibited.
+Unauthorised duplication or redistribution of these layouts, styling coordinates, and text assets is strictly prohibited (although good luck doing that :p).
 
 *Designed, coded, and engineered inside Visual Studio Code.*
