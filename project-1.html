@@ -200,5 +200,12 @@
         </div>
 
     </div>
+    <!-- RETRO ANTI-THEFT RIGHT CLICK DISABLE SCRIPT -->
+    <script>
+        document.addEventListener('contextmenu', function(element) {
+            element.preventDefault();
+            alert("[ SYSTEM_NOTICE ]: File architecture is encrypted. Copy operations are restricted!");
+        });
+    </script>
 </body>
 </html>

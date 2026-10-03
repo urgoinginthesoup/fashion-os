@@ -458,6 +458,12 @@
         updateClock();
         setInterval(updateClock, 1000);
     </script>
-
+<!-- RETRO ANTI-THEFT RIGHT CLICK DISABLE SCRIPT -->
+    <script>
+        document.addEventListener('contextmenu', function(element) {
+            element.preventDefault();
+            alert("[ SYSTEM_NOTICE ]: File architecture is encrypted. Copy operations are restricted!");
+        });
+    </script>
 </body>
 </html>
