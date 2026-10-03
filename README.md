@@ -30,7 +30,7 @@ This platform runs via:
 Thank you to my alpha testers who are testing my website <33
 
 * 🎀 **Valk!**
-* ⟡ **Tester 2**
+* ⟡ **Nomad**
 * ★ **Tester 3**
 
 ‿̩͙⊱༒︎༻♱༺༒︎⊰‿̩͙
