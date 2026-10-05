@@ -23,7 +23,7 @@ This platform runs via:
 * **JavaScript** — Time zone parameter controllers, blocking any right clicking and being able to copy my e-mail address to use in your preferred e-mail app/website.
 * **Chatango Network API** — • Powers the chat room safely without slowing down or breaking the website.
 
-## 🌸 ALPHA TESTERS (Alpha ver. 0.1.0)
+## 🌸 ALPHA TESTERS (v0.1.0-alpha)
 Thank you to my alpha testers who are testing my website <33
 
 * 🎀**Valk!**
