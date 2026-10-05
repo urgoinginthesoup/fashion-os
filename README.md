@@ -26,7 +26,7 @@ Thank you to my alpha testers who are testing my website <33
 
 * 🎀**Valk!**
 * ⟡ **Nomad**
-* ★**Tester 3**
+* ★**Anonymous**
 
 
 
