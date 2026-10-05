@@ -8,6 +8,7 @@ Welcome to the official repository framework for my digital workspace! This plat
 * **Old-School Windows Revival:** The website looks like a classic computer screen where different windows sit side-by-side.
 * **Live Features:** There is a real-time clock that automatically matches your timezone.
 * **Custom Cursors:** Your normal mouse pointer turns into custom pixel graphics when you move around.
+* **Community Chat box:** A live, interactive chatroom dashboard pinned to the homepage so visitors can communicate in real time next to chat box rules.
 
 ## 📁 FILE INFO
 * `index.html` — Main homepage with tastes of my styled looks and very basic info on myself.
@@ -20,6 +21,7 @@ This platform runs via:
 * **HTML5** — Interface core skeletons and typographic strings.
 * **CSS3** — Custom grid layouts, keyframe blink animations, and CRT scanline filters.
 * **JavaScript** — Time zone parameter controllers, blocking any right clicking and being able to copy my e-mail address to use in your preferred e-mail app/website.
+* **Chatango Network API** — • Powers the chat room safely without slowing down or breaking the website.
 
 ## 🌸 ALPHA TESTERS
 Thank you to my alpha testers who are testing my website <33
