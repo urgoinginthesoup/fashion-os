@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+     <!-- Character encoding for normal text and symbols -->
     <meta charset="UTF-8">
+    <!-- Makes website available on mobile and desktop screens -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Browser tab title -->
     <title>˙⋆✮FASHION PORTFOLIO˙⋆✮</title>
     <style>
-        
+    /* Custom Hatsune Miku cursors for normal browsing and hovering */
         body {
             cursor: url('images/Hatsune-Miku-Normal-Select.png'), auto !important;
         }
 
-        /* 2. Swaps to custom hand/finger icon when hovering over interactive elements */
         a, button, .y2k-btn, .window-controls span {
             cursor: url('images/Hatsune-Miku-Link-Select.png'), pointer !important;
         }
-
+    /* Global reset to get rid of the default spacing and makes sure the layout is consistent */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: 'times new roman', serif;
         }
-
+    /* Dark cherry-wine background with a pink grid pattern */
         body {
             background-color: #651614;
             color: #f4b9b8;
@@ -32,18 +34,22 @@
             overflow-x: hidden;
             padding: 20px;
         }
-
+    /* CRT overlay effect to creates fixed horizontal scanlines across the entire viewport */
         body::before {
             content: " ";
             display: block;
             position: fixed;
             top: 0; left: 0; right: 0; bottom: 0;
+        /* Layered gradients creating the dark, repeating pixel rows */
             background: linear-gradient(rgba(2, 1, 1, 1.0) 50%, rgba(61, 11, 13, 1) 50%), linear-gradient(90deg, rgba(2, 1, 1, 1.0), rgba(61, 11, 13, 1), rgba(83, 8, 14, 1));
+        /* Placed in the background, behind the content but in front of the primary background */
             z-index: -2; 
+        /* Shapes the gradient into tiny 4px tall horizontal rows and 6px wide columns */
             background-size: 100% 4px, 6px 100%;
+        /* Allows users to click right through the layer to interact with buttons below it */
             pointer-events: none;
         }
-
+        /* 12-column desktop grid container that centers the layout on the screen */
         .desktop-environment {
             max-width: 1200px;
             margin: 0 auto;
@@ -51,6 +57,7 @@
             grid-template-columns: repeat(12, 1fr);
             gap: 20px;
         }
+         /* Top header bar styled like a retro OS window header spanning the full grid width */
         header {
             grid-column: span 12;
             border: 2px solid #f4b9b8;
@@ -61,7 +68,7 @@
             align-items: center;
             box-shadow: 4px 4px 0px #240a0a;
         }
-
+    /* Bold, uppercase logo styling featuring a distinct dark pink text glow */
         .logo {
             font-weight: bold;
             font-size: 1.5rem;
@@ -69,24 +76,24 @@
             letter-spacing: 2px;
             text-shadow: 0 0 8px #3b0016;
         }
-
+    /* Container that clips the text scrolling and it occupies half the header width */
         .ticker-wrap {
             overflow: hidden;
             width: 50%;
-            background: #86776b;
-            border: 1px inset #f4b9b8;
+            background: #86776b; /* Taupe ticker background */
+            border: 1px inset #f4b9b8; /* Beveled look */
             padding: 3px;
         }
-        
-        .ticker {
+     /* The scrolling text element itself, kept on a single continuous line */
+        .ticker { 
             display: inline-block;
             white-space: nowrap;
-            animation: marquee 15s linear infinite;
+            animation: marquee 15s linear infinite; /* Loops smoothly every 15 seconds */
         }
-
+    /* Animation timeline moving the text fully from right to left */
         @keyframes marquee {
-            0% { transform: translate3d(100%, 0, 0); }
-            100% { transform: translate3d(-100%, 0, 0); }
+            0% { transform: translate3d(100%, 0, 0); }  /* Starts completely off-screen to the right */
+            100% { transform: translate3d(-100%, 0, 0); } /* Ends completely off-screen to the left */
         }
 
         .window {
@@ -272,8 +279,8 @@
                 </div>
             </div>
             <div style="margin-top: 15px; background:#e91e63; border: 1px inset #ff3333; padding: 5px; text-align: center;">
-                <span style="font-size: 0.75rem; display: block; margin-bottom: 2px; color:#600907;">YOU ARE VISITOR NO.</span>
-                <span style="font-size: 1.2rem; font-weight: bold; letter-spacing: 3px; background:#6c4241; padding: 0 5px;">0048291</span>
+                <span style="font-size: 0.75rem; display: block; margin-bottom: 2px; color:#6c1f1e;">YOU ARE VISITOR NO.</span>
+                <span style="font-size: 1.2rem; font-weight: bold; letter-spacing: 3px; background:#573f3e; padding: 0 5px;">0048291</span>
             </div>
                 
             <div class="window-content">
@@ -364,10 +371,10 @@
                 </div>
             </div>
             <div class="window-content" style="display: flex; align-items: center; justify-content: space-between; background: #ff5f9e;">
-                <div style="font-size: 0.8rem; color:#2c1418; letter-spacing: 1px;">➢NOW PLAYING: ARLANS_MIXTAPE.MP3 [02:45]</div>
+                <div style="font-size: 0.8rem; color:#ad102b; letter-spacing: 1px;">➢NOW PLAYING: ARLANS_MIXTAPE.MP3 [02:45]</div>
                 <div style="display: flex; gap: 8px;">
-                    <button style="background:#bea6a6; border: 1px solid #930510; color: #3b0016; padding: 2px 8px; font-size: 0.7rem; cursor: crosshair;">[ REWIND ]</button>
-                    <button style="background: #86776b; border: 1px solid #5f1412; color: #2b0302; padding: 2px 8px; font-size: 0.7rem; cursor: crosshair; font-weight: bold;">[ PLAY ]</button>
+                    <button style="background:#975858; border: 1px solid #930510; color: #3b0016; padding: 2px 8px; font-size: 0.7rem; cursor: crosshair;">[ REWIND ]</button>
+                    <button style="background: #86776b; border: 1px solid #5f1412; color: #6d4242; padding: 2px 8px; font-size: 0.7rem; cursor: crosshair; font-weight: bold;">[ PLAY ]</button>
                     <button style="background:#580707; border: 1px solid #ff5f9e; color:brown; padding: 2px 8px; font-size: 0.7rem; cursor: crosshair;">[ PAUSE ]</button>
                 </div>
             </div>
@@ -421,7 +428,7 @@
 
 
 <div style="width: 100%; background: #86776b; border: 2px inset #f4b9b8; margin-top: 25px; padding: 8px; text-align: center; box-shadow: 4px 4px 0px #240a0a;">
-    <div style="font-size: 0.75rem; color: #240a0a; margin-bottom: 5px; font-weight: bold; letter-spacing: 1px;">
+    <div style="font-size: 0.75rem; color: #480b0b; margin-bottom: 5px; font-weight: bold; letter-spacing: 1px;">
         ✦ NAVIGATE PORTFOLIO NETWORK ✦
     </div>
     <div style="display: flex; justify-content: center; gap: 20px; font-size: 0.85rem; font-weight: bold;">
@@ -469,7 +476,7 @@
                 </marquee>
             </div>
             
-        </div> <!-- End of Flex Layout -->
+        </div>
     </div>
 </div>
 
