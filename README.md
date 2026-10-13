@@ -23,17 +23,19 @@ This platform runs via:
 * **JavaScript** — Time zone parameter controllers, blocking any right clicking and being able to copy my e-mail address to use in your preferred e-mail app/website.
 * **Chatango Network API** — • Powers the chat room safely without slowing down or breaking the website.
 
-## 🌸 ALPHA TESTERS (v0.1.0-alpha)
-Thank you to my alpha testers who are testing my website <33
+## 🌸 ALPHA TESTERS (v0.2.0-alpha)
+Thank you to all my alpha testers who are testing my website <33
 
+v0.1.0-alpha testers:
 * 🎀**Valk!**
 * ⟡ **Nomad**
 * ★**Anonymous**
 
-
+## WHAT I ADDED
+* Changed some text colours for easier reading; I hope it looks a bit better now.
 
 ### 🔒 COPYRIGHT & LICENSE
-© 2026 Arlan Aleksiejiene. All rights reserved. 
+© 2026 Arlan Aleksiejūtė. All rights reserved. 
 Unauthorised duplication or redistribution of these layouts, styling coordinates, and text assets is strictly prohibited.
 
 *Designed, coded, and engineered inside Visual Studio Code.*
